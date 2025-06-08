@@ -7,7 +7,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Insert title here</title>
+	<title> Authentication </title>
 </head>
 <body>
 
@@ -29,8 +29,20 @@
 		ResultSet result = stmt.executeQuery();
 		
 		if(result.next()){
+			String role = result.getString("role");
+			int userId = result.getInt("user_id");
+			
 			session.setAttribute("user", username);
-			response.sendRedirect("home.jsp");
+			session.setAttribute("user_id", userId);
+			session.setAttribute("role", role);
+			
+			if("admin".equals(role)){
+				response.sendRedirect("adminDashboard.jsp");
+			}else if("rep".equals(role)){
+				response.sendRedirect("repDashboard.jsp");
+			}else{
+				response.sendRedirect("home.jsp");
+			}
 		}else{
 			response.sendRedirect("login.jsp?error=1");
 		}

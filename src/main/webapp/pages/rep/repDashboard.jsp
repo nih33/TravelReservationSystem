@@ -22,7 +22,7 @@
 	    <input type="submit" value="View Flight Waitlists" style="background-color: #F4C2C2;">
 	</form>
 	
-	<form action="qa.jsp" method="get">
+	<form action="/TravelReservationSystem/pages/shared/qa.jsp" method="get">
 	    <input type="submit" value="Answer Customer Questions" style="background-color: #F4C2C2;">
 	</form>
 	
@@ -34,7 +34,7 @@
 	    <input type="submit" value="Lookup Flights by Airport" style="background-color: #F4C2C2;">
 	</form>
 	
-	<form action="logout.jsp" method="get">
+	<form action="/TravelReservationSystem/pages/shared/logout.jsp" method="get">
 		<input type="submit" value="Logout" style="background-color: #fff9c4;">
 	</form> 
 	

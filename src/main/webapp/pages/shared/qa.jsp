@@ -2,17 +2,17 @@
 <%
 String role = (String) session.getAttribute("role");
 %>
-<form method="get" action="qa.jsp">
+<form method="get" action="/TravelReservationSystem/pages/shared/qa.jsp">
     Search by keyword: <input type="text" name="q"><input type="submit" value="Search"/>
 </form>
 
 <%if("customer".equals(role)) { %>
-	<form action="home.jsp" method="get" style="display:inline;">
+	<form action="/TravelReservationSystem/pages/customer/home.jsp" method="get" style="display:inline;">
 	    <input type="submit" value="Home">
 	</form>
 <% } %>
 
-<a href="askQuestion.jsp">Ask a Question</a>
+<a href="/TravelReservationSystem/pages/customer/askQuestion.jsp">Ask a Question</a>
 <hr>
 <%
 String keyword = request.getParameter("q");
@@ -72,7 +72,7 @@ try {
     if ("rep".equals(role)) {
 %>
     <br><br>
-	<form action="repDashboard.jsp" method="get">
+	<form action="/TravelReservationSystem/pages/rep/repDashboard.jsp" method="get">
 		<input type="submit" value="Rep Dashboard" style="background-color: #fff9c4">
 	</form> 
 <%

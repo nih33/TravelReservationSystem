@@ -21,7 +21,7 @@
 	<% } %>
 	
 	
-	<form method="post" action="authenticate.jsp">
+	<form method="post" action="/TravelReservationSystem/pages/shared/authenticate.jsp">
 	
 		<label for="usern">Username: </label>
 		<input type="text" name="usern"/><br>

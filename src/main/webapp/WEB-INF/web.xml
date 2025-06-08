@@ -3,8 +3,8 @@
   <display-name>TravelReservationSystem</display-name>
   
 	<welcome-file-list>
-    	<welcome-file>login.jsp</welcome-file> 
-    	<welcome-file>login.jsp</welcome-file> 
+    	<welcome-file>pages/shared/login.jsp</welcome-file> 
+    	<welcome-file>pages/shared/login.jsp</welcome-file> 
   	</welcome-file-list>
 	
 </web-app>

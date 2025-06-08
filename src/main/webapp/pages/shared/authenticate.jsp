@@ -37,11 +37,11 @@
 			session.setAttribute("role", role);
 			
 			if("admin".equals(role)){
-				response.sendRedirect("adminDashboard.jsp");
+				response.sendRedirect("/TravelReservationSystem/pages/admin/adminDashboard.jsp");
 			}else if("rep".equals(role)){
-				response.sendRedirect("repDashboard.jsp");
+				response.sendRedirect("/TravelReservationSystem/pages/rep/repDashboard.jsp");
 			}else{
-				response.sendRedirect("home.jsp");
+				response.sendRedirect("/TravelReservationSystem/pages/customer/home.jsp");
 			}
 		}else{
 			response.sendRedirect("login.jsp?error=1");

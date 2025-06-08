@@ -17,11 +17,11 @@
     <input type="submit" value="Submit">
 </form>
 
-<form action="home.jsp" method="get" style="display:inline;">
+<form action="/TravelReservationSystem/pages/customer.jsp" method="get" style="display:inline;">
     <input type="submit" value="Home">
 </form>
 
-<form action="qa.jsp" method="get" style="display:inline;">
+<form action="/TravelReservationSystem/pages/shared/qa.jsp" method="get" style="display:inline;">
     <input type="submit" value="Back to Q&A">
 </form>
 

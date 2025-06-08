@@ -11,7 +11,7 @@
 </head>
 <body>
 <h2>Search Flights</h2>
-<form action="flightResults.jsp" method="get">
+<form action="/TravelReservationSystem/pages/customer/flightResults.jsp" method="get">
     From Airport: <input type="text" name="from" required><br><br>
     To Airport: <input type="text" name="to" required><br><br>
     Departure Date: <input type="date" name="departureDate"><br><br>
@@ -22,7 +22,7 @@
     Flexible Dates: <input type="checkbox" name="flexible" value="yes"><br><br>
     <input type="submit" value="Search Flights">
 </form>
-<form action="home.jsp" method="get" style="display:inline;">
+<form action="/TravelReservationSystem/pages/customer/home.jsp" method="get" style="display:inline;">
     <input type="submit" value="Home">
 </form>
 </body>

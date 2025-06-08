@@ -34,7 +34,7 @@
 	<input type="submit" value="Most Active Flights" style="background-color: #d0e7ff;"> 
 </form> <br>
 
-<form action="logout.jsp" method="get">
+<form action="/TravelReservationSystem/pages/shared/logout.jsp" method="get">
 	<input type="submit" value="Logout" style="background-color: #fff9c4;">
 </form> 
 	

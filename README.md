@@ -53,9 +53,12 @@ Built using **Java (backend)**, **MySQL (database)**, and **JSP/HTML/CSS (fronte
 
 **Clone the repository**
    
-bash
-   git clone https://github.com/nih33/TravelReservationSystem.git
-   cd TravelReservationSystem should i add that it was a partnered project for prin info cs 336, and my plans of cleaning it, implementing additional tools, normalizing the databases further where possible
+```bash
+git clone https://github.com/nih33/TravelReservationSystem.git
+cd TravelReservationSystem
+```
+
+---
 
 ## 🔐 Sample Credentials
 

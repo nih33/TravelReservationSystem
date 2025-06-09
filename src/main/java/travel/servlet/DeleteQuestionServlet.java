@@ -61,7 +61,7 @@ public class DeleteQuestionServlet extends HttpServlet {
 			con.close();
 
 			if (rowsAffected > 0) {
-				response.sendRedirect("qa.jsp");  // Redirect to updated Q&A page
+				response.sendRedirect("/TravelReservationSystem/pages/shared/qa.jsp");  // Redirect to updated Q&A page
 			} else {
 				response.getWriter().println("Question not found.");
 			}

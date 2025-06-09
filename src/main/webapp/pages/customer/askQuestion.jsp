@@ -10,7 +10,7 @@
 </head>
 <body>
 <h2>Contact Support</h2>
-<form action="SubmitQuestionServlet" method="post">
+<form action="${pageContext.request.contextPath}/SubmitQuestionServlet" method="post">
     Subject: <input type="text" name="subject"><br>
     Question:<br>
     <textarea name="question" rows="5" cols="40"></textarea><br>

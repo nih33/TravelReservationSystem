@@ -83,7 +83,7 @@ public class RepConfirmBookingServlet extends HttpServlet {
             con.close();
             
             // Redirect to the repBooking.jsp page with a query string to indicate booking confirmation
-            response.sendRedirect("repBooking.jsp?bookingConfirmed=true");
+            response.sendRedirect("/TravelReservationSystem/pages/rep/repBooking.jsp?bookingConfirmed=true");
         } catch (Exception e) {
             e.printStackTrace();
             response.getWriter().println("Booking failed: " + e.getMessage());

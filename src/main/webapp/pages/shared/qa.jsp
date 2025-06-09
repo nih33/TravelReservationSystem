@@ -43,7 +43,7 @@ try {
 	    if ("rep".equals(role)) {
 	    	if(ans == null) {
 %>
-			<form method="post" action="ReplyToQuestionServlet">
+			<form method="post" action="${pageContext.request.contextPath}/ReplyToQuestionServlet">
 			    <input type="hidden" name="questionId" value="<%= qid %>">
 			    <textarea name="answer" rows="2" cols="40"></textarea><br>
 			    <input type="submit" value="Reply">
@@ -51,7 +51,7 @@ try {
 <% 
     		} 
 %>
-		<form method="post" action="DeleteQuestionServlet" onsubmit="return confirm('Are you sure you want to delete this question?');">
+		<form method="post" action="${pageContext.request.contextPath}/DeleteQuestionServlet" onsubmit="return confirm('Are you sure you want to delete this question?');">
 		    <input type="hidden" name="questionId" value="<%= qid %>">
 		    <input type="submit" value="Delete Question" style="color: red;">
 		</form>

@@ -33,6 +33,6 @@ public class CancelBookingServlet extends HttpServlet {
             response.getWriter().println("Error: " + e.getMessage());
         }
 
-        response.sendRedirect("myReservations.jsp");
+        response.sendRedirect("/TravelReservationSystem/pages/customer/myReservations.jsp");
     }
 }

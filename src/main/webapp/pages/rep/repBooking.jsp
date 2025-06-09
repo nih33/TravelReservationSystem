@@ -49,7 +49,7 @@
                 int flightId = rs.getInt("flight_id");
 %>
 <h2>Confirm Booking for Flight <%= flightNum %></h2>
-<form action="RepConfirmBookingServlet" method="post">
+<form action="${pageContext.request.contextPath}/RepConfirmBookingServlet" method="post">
     <input type="hidden" name="flightId" value="<%= flightId %>">
     User ID: <input type="number" name="userId" required><br>
     First Name: <input type="text" name="firstName" required><br>
@@ -76,8 +76,8 @@
 %>
 
 	<br><br>
-	<form action="adminDashboard.jsp" method="get">
-		<input type="submit" value="Admin Dashboard" style="background-color: #fff9c4">
+	<form action="repDashboard.jsp" method="get">
+		<input type="submit" value="Rep Dashboard" style="background-color: #fff9c4">
 	</form> 
 
 </body>

@@ -32,7 +32,7 @@ public class ReplyToQuestionServlet extends HttpServlet {
             e.printStackTrace();
         }
 
-        response.sendRedirect("qa.jsp");
+        response.sendRedirect("/TravelReservationSystem/pages/shared/qa.jsp");
     }
 }
 

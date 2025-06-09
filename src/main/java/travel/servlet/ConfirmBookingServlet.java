@@ -96,7 +96,7 @@ public class ConfirmBookingServlet extends HttpServlet {
             }
             
             con.close();
-            response.sendRedirect("myReservations.jsp");
+            response.sendRedirect("/TravelReservationSystem/pages/customer/myReservations.jsp");
             return;
         } catch (Exception e) {
             e.printStackTrace();
